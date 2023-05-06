@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url("/src/fonts/Oswald-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HeatherOliver';
+    src: url("/src/fonts/HeatherOliver-Regular.otf") format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+}
+
+#navBar {
+    display: flex;
+    height: 60px;
+    margin: 0px;
+    background-color: #311413;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+#navLeft {
+    padding: 5px;
+}
+
+#navRight {
+    display: flex;
+    gap: 30px;
+    font-size: 130%;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.tab {
+    color: white;
+    font-family: 'Oswald';
+}
+
+.selected {
+    background: #ED2131;
+    border-radius: 25px;
+    padding: 2px 23px;
+}
+
+.heroContainer {
+    height: 700px;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heroBck {
+    height: auto;
+    width: 100%;
+    filter: brightness(70%);
+}
+
+.heroImg {
+    height: 30em;
+    top: 20%;
+}
+
+.heroContent {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.section1 {
+    display: flex;
+    height: 600px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF3CA;
+    padding: 0 5%;
+    gap: 60px;
+}
+
+h1 {
+    font-family: 'HeatherOliver';
+    color: #ED2131;
+    font-size: 3.5em;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #311413;
+    font-family: 'Oswald';
+    font-size: 1.2em;
+}
+
+.section1Img,
+.section2Img {
+    height: auto;
+    width: 50%;
+    border-radius: 30px;
+    max-height: 70%;
+}
+
+.section2 {
+    display: flex;
+    height: 600px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0 5%;
+    gap: 60px;
+}
+
+.footer {
+    height: 51px;
+    width: auto;
+    display: flex;
+    gap: 20px;
+    background-color: #311413;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    background-color: #ED2131;
+    border-radius: 14px;
+    padding: 4px;
+    margin: 2px;
+    height: 70%;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -80px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Oswald';
+    margin: -8px;
+    font-size: 1.5em;
+}
