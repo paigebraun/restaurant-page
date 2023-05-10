@@ -1,4 +1,4 @@
-import Logo from './images/rosco-logo.png';
+
 import HeroBck from './images/R4.png';
 import HeroImg from './images/roscoe-hero.png';
 import Pico from './images/roscoes-chicken-waffles-pico.jpg';
@@ -6,46 +6,13 @@ import Stevie from './images/Stevie_Wonder_Roscoe.png';
 import IG from './images/ig-logo.png';
 import FB from './images/fb-logo.png';
 
-
 const container = document.getElementById('content');
 
-function homepageLoad() {
-    createNavBar();
+export function homepageLoad() {
     createHero();
     createSection1();
     createSection2();
     createFooter();
-}
-
-function createNavBar() {
-    //create navigation bar
-    const navBar = document.createElement("div");
-    navBar.id = 'navBar';
-    const navLeft = document.createElement("div");
-    navLeft.id = 'navLeft';
-    const logo = new Image();
-    logo.src = Logo;
-    logo.className = 'logo';
-
-    const navRight = document.createElement("div");
-    navRight.id = 'navRight';
-    const home = document.createElement("button");
-    home.classList.add('tab', 'selected');
-    home.innerText = 'Home';
-    const menu = document.createElement("button");
-    menu.className = 'tab';
-    menu.innerText = 'Menu';
-    const locations = document.createElement("button");
-    locations.className = 'tab';
-    locations.innerText = 'Locations';
-    
-    container.appendChild(navBar);
-    navBar.appendChild(navLeft);
-    navBar.appendChild(navRight);
-    navLeft.appendChild(logo);
-    navRight.appendChild(home);
-    navRight.appendChild(menu);
-    navRight.appendChild(locations);
 }
 
 function createHero() {
@@ -122,7 +89,7 @@ function createSection2() {
     container.appendChild(section2);
 }
 
-function createFooter() {
+export function createFooter() {
     //create footer
     const footer = document.createElement("div");
     footer.className = 'footer';
@@ -143,5 +110,3 @@ function createFooter() {
 
     container.appendChild(footer);
 }
-
-export default homepageLoad;
