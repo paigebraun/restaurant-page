@@ -200,3 +200,50 @@ p {
     max-width: 100%;
     height: auto;
 }
+
+/* locations page styling*/
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    gap: 40px;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 25px;
+    filter: drop-shadow(1px 1px 4px #B6B6B6);
+    padding: 40px 20px;
+}
+
+.locationTitle {
+    font-family: 'HeatherOliver';
+    color: #ED2131;
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.locationInfo {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+}
+
+.locationInfo > p {
+    margin: 0px;
+}
+
+.phone {
+    font-weight: bolder;
+}
+
+.phone,
+.number {
+    margin: 0px;
+}
+
+.locationInfo > p {
+    text-decoration: underline;
+}

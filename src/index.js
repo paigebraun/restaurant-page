@@ -1,5 +1,6 @@
 import { homepageLoad } from './homepage';
 import menuLoad from './menu';
+import locationLoad from './locations'
 import Logo from './images/rosco-logo.png';
 import './styles.css';
 
@@ -10,12 +11,14 @@ homepageLoad();
 
 const homeBtn = document.querySelector('.home');
 const menuBtn = document.querySelector('.menu');
+const locationBtn = document.querySelector('.locations')
 
 homeBtn.addEventListener('click', ()=> {
     while (content.firstChild) {
         content.removeChild(content.lastChild);
     }
     menuBtn.classList.remove("selected");
+    locationBtn.classList.remove("selected");
     homeBtn.classList.add("selected");
     homepageLoad();
 })
@@ -25,10 +28,20 @@ menuBtn.addEventListener('click', ()=> {
         content.removeChild(content.lastChild);
     }
     homeBtn.classList.remove("selected");
+    locationBtn.classList.remove("selected");
     menuBtn.classList.add("selected");
     menuLoad();
 })
 
+locationBtn.addEventListener('click', ()=> {
+    while (content.firstChild) {
+        content.removeChild(content.lastChild);
+    }
+    homeBtn.classList.remove("selected");
+    menuBtn.classList.remove("selected");
+    locationBtn.classList.add("selected");
+    locationLoad();
+})
 
 function createNavBar() {
     //create navigation bar
